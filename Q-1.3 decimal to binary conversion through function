@@ -1,0 +1,25 @@
+#include<stdio.h>
+int binary(int);
+int main()
+{
+	int n;
+	printf("Enter any decimal number: ");
+	scanf("%d",&n);
+	binary(n);
+	return 0;
+}
+  int binary(int a)
+  {
+  	int x,j,i=0;
+  	int ar[50];
+  	while(a!=0)
+	  {
+	  	x=a%2;
+	  	a=a/2;
+	  	ar[i]=x;
+	  	i++;
+	  }
+	  for(j=i-1;j>=0;j--)
+	  printf("%d",ar[j]);
+	return 0;
+  }

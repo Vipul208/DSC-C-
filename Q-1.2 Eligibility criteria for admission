@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+	float p,c,m,t,u;
+	printf("Input the marks obtained in physics: ");
+	scanf("%f",&p);
+	printf("Input the marks obtained in chemistry: ");
+	scanf("%f",&c);
+	printf("Input the marks obtained in maths: ");
+	scanf("%f",&m);
+	u=p+m;
+	t=p+c+m;
+	if(m>=65 && p>=55 && c>=50)
+	{
+		if(t>=180)
+		printf("Candidate is eligible for admission");
+	}
+	else if(u>=140)
+	     printf("Candidate is eligible for admission");
+	else
+	     printf("Candidate is not eligible for admission");
+	return 0;
+}
